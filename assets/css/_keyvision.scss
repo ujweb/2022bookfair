@@ -35,7 +35,7 @@ $circle-diameter: (100vw / 15);
             animation: fadeIn 0.1s forwards alternate linear;
         }
         &:not(.circle-wide) {
-            animation: flashing 0.8s forwards alternate linear;
+            animation: flashing 3s infinite forwards alternate linear;
             &.animate-1 {
                 animation-delay: 0.5s;
             }
@@ -917,22 +917,34 @@ $circle-diameter: (100vw / 15);
     0% {
         opacity: 0;
     }
+    5% {
+        opacity: 0.5;
+    }
     10% {
+        opacity: 0.3;
+    }
+    15% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    25% {
         opacity: 0.5;
     }
     30% {
         opacity: 0.3;
     }
-    50% {
+    35% {
         opacity: 0.1;
     }
-    70% {
-        opacity: 0.4;
+    40% {
+        opacity: 0.5;
     }
-    85% {
+    45% {
         opacity: 0.7;
     }
-    100% {
+    50% {
         opacity: 1;
     }
 }
